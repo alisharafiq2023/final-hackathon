@@ -1,0 +1,140 @@
+[11:47 AM, 7/13/2023] +92 335 3933527: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs
+    /font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ
+    /ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==
+    " crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">
+           DNX
+        </a>
+       <ul class="navmenu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Account</a></li>
+       </ul>
+
+       <div class="nav-icons">
+        <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+    </header>
+
+      <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                 <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
+
+                    <form id="loginform">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="password">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">Forgot password</a>
+                    </form>
+                    <form id="regform">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+                        </form>
+                 </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    <div class="footer">
+        <hr>
+        <h1 class="h3">SALE UPTO 70% OFF FOR ALL CLOTHS & FASHION ITEMS ON ALL BRANDS</h1>
+        <hr>
+        <div class="container">
+            <div class="products-container">
+                <div class="footer-col-1">
+                    <h1>DNX</h1>
+                    <h3>The best look anytime,anywhere</h3>
+                </div>
+                <div class="footer-col-2">
+                    <h3>For Her</h3>
+                    <ul>
+                        <li>Women Jeans</li>
+                        <li>Shorts</li>
+                        <li>Skirts</li>
+                        <li>Accesseries</li>
+                        <li>Dresses</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>For Him</h3>
+                    <ul>
+                        <li>Men Jeans</li>
+                        <li>Shorts</li>
+                        <li>Skirts</li>
+                        <li>Accesseries</li>
+                        <li>Dresses</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Subscribe</h3>
+                    <div class="input">
+                       <input type="email" placeholder="Enter email">
+                    </div>
+                   <button class="btn2">Subscribe</button>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright"> Copyrights-2023</p>
+        </div>
+       </div>
+      
+       <script>
+       var loginform = document.getElementById("loginform");
+       var regform = document.getElementById("regform");
+       var indicator = document.getElementById("indicator");
+              
+       function register(){
+        regform.style.transform = "translateX(0px)";
+       loginform.style.transform = "translateX(0px)";
+       indicator.style.transform = "translateX(100px)";
+      
+       }
+       function login(){
+        regform.style.transform = "translateX(300px)";
+       loginform.style.transform = "translateX(300px)";
+       indicator.style.transform = "translateX(0px)";
+       }
+
+
+
+
+
+
+       </script>
+
+
+
+    </body>
+    </html>
+    
